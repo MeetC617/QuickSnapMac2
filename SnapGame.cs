@@ -27,7 +27,17 @@ namespace CardGames
 			{
 				myGame.Start ();
 			}
-		}
+            if (myGame.IsStarted) {
+                if (SwinGame.KeyTyped (KeyCode.LeftShiftKey) &&
+                SwinGame.KeyTyped (KeyCode.RightShiftKey)) {
+                    //TODO: add sound effects
+                } else if (SwinGame.KeyTyped (KeyCode.LeftShiftKey)) {
+                    myGame.PlayerHit (0);
+                } else if (SwinGame.KeyTyped (KeyCode.RightShiftKey)) {
+                    myGame.PlayerHit (1);
+                }
+            }
+        }
 
 		/// <summary>
 		/// Draws the game to the Window.
