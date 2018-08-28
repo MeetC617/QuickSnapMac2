@@ -1,7 +1,8 @@
 ﻿<Properties StartupConfiguration="{871B5A90-103A-46A5-BBB9-07C02B9851D1}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="SnapGame.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="GameLogic/Snap.cs">
     <Files>
-      <File FileName="SnapGame.cs" Line="74" Column="10" />
+      <File FileName="SnapGame.cs" Line="78" Column="23" />
+      <File FileName="GameLogic/Snap.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug-Mac" />

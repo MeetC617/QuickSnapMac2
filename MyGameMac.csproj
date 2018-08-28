@@ -45,7 +45,6 @@
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
     <Folder Include="src\" />
-    <Folder Include="Resources\" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="SwinGame">
@@ -54,9 +53,6 @@
     <Reference Include="System" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\**\*.*">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
     <None Include="Info.plist">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
@@ -72,5 +68,33 @@
     <Compile Include="GameLogic\Card.cs" />
     <Compile Include="GameLogic\Deck.cs" />
     <Compile Include="GameLogic\Snap.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\.DS_Store" />
+    <BundleResource Include="Resources\SwinGame.icns" />
+    <BundleResource Include="Resources\SwinGame.ico" />
+    <BundleResource Include="Resources\animations\startup.txt" />
+    <BundleResource Include="Resources\bundles\FileDialog.txt" />
+    <BundleResource Include="Resources\bundles\splash.txt" />
+    <BundleResource Include="Resources\fonts\arial.ttf" />
+    <BundleResource Include="Resources\fonts\cour.ttf" />
+    <BundleResource Include="Resources\fonts\maven_pro_regular.ttf" />
+    <BundleResource Include="Resources\images\Cards.png" />
+    <BundleResource Include="Resources\images\FileDialog_Active.png" />
+    <BundleResource Include="Resources\images\FileDialog_Background.png" />
+    <BundleResource Include="Resources\images\FileDialog_Inactive.png" />
+    <BundleResource Include="Resources\images\FileDialog_Scroll.png" />
+    <BundleResource Include="Resources\images\FileDialog_ScrollSmall.png" />
+    <BundleResource Include="Resources\images\SwinGameAni.png" />
+    <BundleResource Include="Resources\images\Swinburne.jpg" />
+    <BundleResource Include="Resources\images\fdFile.png" />
+    <BundleResource Include="Resources\images\fdFolder.png" />
+    <BundleResource Include="Resources\panels\FileDialog.txt" />
+    <BundleResource Include="Resources\sounds\SwinGameStart.wav" />
+    <BundleResource Include="Resources\sounds\crowd-groan.wav" />
+    <BundleResource Include="Resources\sounds\error.wav" />
+    <BundleResource Include="Resources\sounds\punch2.wav" />
+    <BundleResource Include="Resources\sounds\slap.wav" />
+    <BundleResource Include="Resources\fonts\Chunkfive%281%29.otf" />
   </ItemGroup>
 </Project>

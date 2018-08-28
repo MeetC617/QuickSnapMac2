@@ -25,7 +25,7 @@ namespace CardGames
 
 			if (SwinGame.KeyTyped (KeyCode.SpaceKey))
 			{
-				myGame.FlipNextCard ();
+				myGame.Start ();
 			}
 		}
 
